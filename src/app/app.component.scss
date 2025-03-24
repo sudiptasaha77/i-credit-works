@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("../assets/Background_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  width: 400px;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.login-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.password-group {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.remember-me label {
+  font-size: 14px;
+  color: #333;
+}
+
+.forgot-password {
+  display: block;
+  color: #4a67a1;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #eb690b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #d85c0a;
+}
+
+.security-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  background: #4a5568;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.security-footer i {
+  margin-right: 5px;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.article-section article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-part {
+  max-width: 375px;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.second-part {
+  max-width: 500px;
+  font-family: "Neue Haas Grotesk Display", sans-serif;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  picture,
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    background-image: url("../assets/bg-1920.png");
+    padding-left: 139px;
+  }
+
+  .login-box {
+    width: 484.5px;
+    height: 720px;
+  }
+
+  .logo {
+    width: 266px;
+    height: 81px;
+    top: 7.95px;
+    left: 109.5px;
+
+  }
+
+  .second-part {
+    max-width: 394px;
+  }
+
+  .hr-divide {
+    width: 484.5px;
+    height: 4.5px;
+    position: relative;
+    top: -4px;
+    left: -26px;
+    margin-bottom: 22px;
+    background: #EA731F;
+  }
+
+  .first-part {
+    max-width: 375px;
+    ;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .container {
+    background-image: url("../assets/bg-1440.png");
+    padding-left: 77.5px;
+  }
+
+  .login-box {
+    width: 348.23px;
+    height: 517.5px;
+  }
+
+  .logo {
+    width: 191px;
+    height: 81px;
+    top: 7.95px;
+    left: 109.5px;
+
+  }
+
+  .first-part {
+    max-width: 236px;
+    font-size: 35px;
+  }
+
+  .second-part {
+    max-width: 278px;
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .container {
+    background-image: url("../assets/bg-1280.png");
+    padding-left: 68.9px;
+  }
+
+  .login-box {
+    width: 309.54px;
+    height: 460px;
+  }
+
+  .first-part {
+    max-width: 236px;
+    font-size: 30px;
+  }
+
+  .second-part {
+    max-width: 240px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0px;
+    background-image: none;
+  }
+
+  .logo {
+    width: 220px;
+    height: 67px;
+    top: 7.95px;
+    left: 109.5px;
+  }
+
+  .login-container {
+    width: 375px;
+  }
+
+  .login-section {
+    width: 100%;
+  }
+
+  .article-section {
+    display: none;
+  }
+
+  .login-box {
+    max-width: 100%;
+    width: 90%;
+    position: static;
+  }
+
+}
